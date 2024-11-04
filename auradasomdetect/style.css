@@ -1,0 +1,49 @@
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+
+
+    }
+   
+    .hero{
+        background-color: #2C3B2D;
+        color: white;
+        height: 100vh;
+    }
+    video {
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    canvas{
+        position: absolute;
+        top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: calc(50% + 150px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    button:hover {
+      background-color: #45a049;
+    }
