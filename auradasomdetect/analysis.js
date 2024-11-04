@@ -66,14 +66,14 @@ function displayRecommendations(emotions) {
   if (dominantEmotion === 'happy') {
     message = 'You seem happy! Here are some activities for you:';
     buttonsHtml = `
-      <button onclick="alert('Starting a game...')">Play a Game</button>
+      <button onclick="window.location.href='../games/index.html'">Play a Game</button>
       <button onclick="alert('Connecting to AI chat...')">Talk with AI</button>
     `;
   } else if (dominantEmotion === 'sad') {
     message = 'Feeling down? Try these activities to cheer up:';
     buttonsHtml = `
       <button onclick="alert('Connecting to AI chat...')">Talk with AI</button>
-      <button onclick="alert('Starting a relaxing game...')">Play a Relaxing Game</button>
+      <button onclick="window.location.href='../games/index.html'">Play a Relaxing Game</button>
     `;
   } else if (dominantEmotion === 'angry') {
     message = 'It seems like you might be frustrated. Try these activities to calm down:';
@@ -84,13 +84,13 @@ function displayRecommendations(emotions) {
   } else if (dominantEmotion === 'surprised') {
     message = 'You seem surprised! Here are some fun activities for you:';
     buttonsHtml = `
-      <button onclick="alert('Starting a fun game...')">Discover a New Game</button>
+      <button onclick="window.location.href='../games/index.html'">Discover a New Game</button>
       <button onclick="alert('Connecting to AI chat...')">Talk with AI</button>
     `;
   } else {
     message = 'Here are some activities you might enjoy:';
     buttonsHtml = `
-      <button onclick="alert('Starting a game...')">Play a Game</button>
+      <button onclick="window.location.href='../games/index.html'">Play a Game</button>
       <button onclick="alert('Connecting to AI chat...')">Talk with AI</button>
     `;
   }
