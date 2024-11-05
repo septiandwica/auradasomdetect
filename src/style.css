@@ -29,6 +29,14 @@ body{
     color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-
+.age-detection-box {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -7,59 +7,46 @@
   <title>Emotion Analysis - AuraDasom</title>
   <script defer src="./face-api.min.js"></script>
   <script defer src="./analysis.js"></script>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-    }
-    .image-container {
-      position: relative;
-      display: inline-block;
-    }
-    img, canvas {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .recommendation {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .button-container button {
-      margin: 5px;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      background-color: #007bff;
-      color: #fff;
-      font-size: 14px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <h1>Emotion Analysis Result</h1>
   <div class="image-container">
     <img id="capturedImage" alt="Captured Image" />
     <canvas id="analysisCanvas"></canvas>
+
+    <div id="emotionOverlay">
+      <div class="emotion-overlay emotion-box" id="emotionBox">
+        <h1 id="emotionType"><span id="emotionName"></span></h1>
+      </div>
+      <div class=" emotion-overlay age-gender-box" id="ageGenderBox">
+        <p id="ageGenderDisplay"></p>
+      </div>
+    </div>
   </div>
-  <div class="recommendation" id="recommendation"></div>
-  <div class="button-container" id="buttonContainer"></div>
+
   
+  <div  id="recommendation">
+    <div class="recommendation">
+      <h2>Self-Care Tips</h2>
+      <p id="selfCareTips" style="display:none;"></p>
+      
+    </div>
+   <div class="recommendation">
+    <h2>Relaxation Techniques</h2>
+    <p id="relaxationTechniques" style="display:none;"></p>
+    
+   </div>
+
+  </div>
+  
+  <div class="button-container" id="buttonContainer">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>
